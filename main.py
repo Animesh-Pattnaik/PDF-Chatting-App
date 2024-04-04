@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-key=os.environ("GOOGLE_API_KEY")
+key=os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=key)
 
 
